@@ -14,8 +14,13 @@ const Cart = () => {
   };
 
   const handleRemoveFromCart = (productId) => {
-    dispatch(removeFromCart(productId));
+    const isConfirmed = window.confirm('¿Estás seguro de que deseas eliminar este producto del carrito?');
+  
+    if (isConfirmed) {
+      dispatch(removeFromCart(productId));
+    }
   };
+  
 
   return (
     <div className="cart-container">
