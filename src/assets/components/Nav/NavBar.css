@@ -1,0 +1,66 @@
+/* NavBar.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.navbar {
+  background-color: #d8d8c0;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregado para un sombreado sutil */
+}
+
+.container {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo {
+  color: #000;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  background-color: #edede9;
+  color: #000;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #ccc; /* Agregado para un borde más definido */
+}
+
+.search-button {
+  background-color: #1693a5;
+  color: #fff;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.search-input:focus {
+  border-color: #d5bdaf;
+  box-shadow: 0 0 5px rgba(213, 189, 175, 0.7); /* Agregado para un resaltado sutil al enfocar */
+}
+
+/* Estilos adicionales para mejorar el diseño de la navbar */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo para el carrito (puedes personalizar según tus necesidades) */
+.cart-icon {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+    
