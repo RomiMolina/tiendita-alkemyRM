@@ -1,0 +1,11 @@
+.footer {
+    margin-top: 2rem;
+    background-color: #d8d8c0; /* Color de fondo del footer */
+    color: #000000; /* Color del texto en el footer */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 5px 0; /* Margen para los elementos de texto en el footer */
+  }

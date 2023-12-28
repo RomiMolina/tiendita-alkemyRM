@@ -4,10 +4,12 @@
   justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 4rem;
 }
 
 .product-container {
-  width: 300px; 
-  margin: 10px; 
+  width: 280px;
+  margin: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px;
 }
-
