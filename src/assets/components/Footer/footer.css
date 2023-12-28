@@ -4,8 +4,10 @@
     color: #000000; /* Color del texto en el footer */
     padding: 20px;
     text-align: center;
+   
   }
   
   .footer p {
-    margin: 5px 0; /* Margen para los elementos de texto en el footer */
+    margin: 5px 0;
+   
   }

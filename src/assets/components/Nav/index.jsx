@@ -7,26 +7,26 @@ import Cart from '../Cart/index.jsx';
 import './NavBar.css';
 
 const NavBar = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const dispatch = useDispatch();
+  // const [searchTerm, setSearchTerm] = useState('');
+  // const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(filterProducts(searchTerm));
-  }, [searchTerm, dispatch]);
+  // useEffect(() => {
+  //   dispatch(filterProducts(searchTerm));
+  // }, [searchTerm, dispatch]);
 
-  const handleInputChange = (e) => {
-    setSearchTerm(e.target.value);
-  };
+  // const handleInputChange = (e) => {
+  //   setSearchTerm(e.target.value);
+  // };
 
-  const handleSearchClick = () => {
-    dispatch(filterProducts(searchTerm));
-  };
+  // const handleSearchClick = () => {
+  //   dispatch(filterProducts(searchTerm));
+  // };
 
   return (
     <nav className="navbar">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="logo">RM</div>
-        <div className="search-bar">
+        <div className="logo">Romina Molina</div>
+        {/* <div className="search-bar">
           <input
             type="text"
             placeholder="Buscar productos..."
@@ -37,7 +37,7 @@ const NavBar = () => {
           <button className="search-button" onClick={handleSearchClick}>
             Buscar
           </button>
-        </div>
+        </div> */}
         <div className="cart-container">
           <Cart />
         </div>
