@@ -1,12 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-// import { useHistory } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart } from '../../../redux/actions/index.jsx';
 import './cart.css';
 
 const Cart = () => {
-  // const history = useHistory();
+  let navigate = useNavigate();
   const cart = useSelector((state) => state.products.cart);
   const dispatch = useDispatch();
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -15,10 +15,10 @@ const Cart = () => {
     setIsCartOpen(!isCartOpen);
   };
 
-  // const handleStartPurchase = () => {
-  //   // Redirige al usuario al formulario de compra
-  //   history.push('/formulario-compra');
-  // };
+  const handleStartPurchase = () => {
+    // Redirige al usuario al formulario de compra
+    navigate('/formulario-compra');
+  };
 
   const handleRemoveFromCart = (productId) => {
     const isConfirmed = window.confirm('¿Estás seguro de que deseas eliminar este producto del carrito?');
@@ -61,9 +61,9 @@ const Cart = () => {
                 </ul>
                 <p>Cantidad total de productos: {cart.length}</p>
                 <p>Total a pagar: ${cart.reduce((total, item) => total + item.price, 0)}</p>
-                {/* <button onClick={handleStartPurchase}>
+                <button onClick={handleStartPurchase}>
                   Iniciar compra
-                </button> */}
+                </button>
               </>
             )}
           </div>
