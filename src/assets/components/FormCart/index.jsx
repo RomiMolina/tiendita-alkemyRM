@@ -2,7 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import './FormCart.css';
+import './formCart.css';
 
 const FormCart = () => {
   const [name, setName] = useState('');
