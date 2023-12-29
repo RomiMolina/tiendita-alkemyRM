@@ -37,8 +37,6 @@ const productReducer = (state = initialState, action) => {
         filteredProducts,
       };
 
-    // Otros casos del reducer según tus necesidades
-
     default:
       return state;
   }

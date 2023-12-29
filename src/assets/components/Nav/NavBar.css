@@ -1,9 +1,9 @@
-/* NavBar.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .navbar {
   background-color: #d8d8c0;
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregado para un sombreado sutil */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .container {
@@ -31,7 +31,7 @@
   border-bottom-left-radius: 0.25rem;
   padding: 0.5rem;
   outline: none;
-  border: 1px solid #ccc; /* Agregado para un borde más definido */
+  border: 1px solid #ccc; 
 }
 
 .search-button {
@@ -46,17 +46,15 @@
 
 .search-input:focus {
   border-color: #d5bdaf;
-  box-shadow: 0 0 5px rgba(213, 189, 175, 0.7); /* Agregado para un resaltado sutil al enfocar */
+  box-shadow: 0 0 5px rgba(213, 189, 175, 0.7); 
 }
 
-/* Estilos adicionales para mejorar el diseño de la navbar */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Estilo para el carrito (puedes personalizar según tus necesidades) */
 .cart-icon {
   font-size: 1.5rem;
   margin-left: 1rem;

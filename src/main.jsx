@@ -5,7 +5,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
 } from "react-router-dom";
 import { Provider } from 'react-redux';
 import App from './App.jsx';

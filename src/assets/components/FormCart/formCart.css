@@ -1,8 +1,6 @@
-/* FormCart.css */
 
 .form-container {
-   
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 15px;
     border: 1px solid #ccc;
@@ -22,7 +20,7 @@
   }
   
   label {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   
   input,
@@ -30,14 +28,20 @@
   select {
     width: 100%;
     padding: 8px;
-    margin: 3px 0 8px;
+    margin: 3px 0 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
   }
   
   textarea {
-    height: 50px; /* Ajusta la altura según tus preferencias */
+    height: 50px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   button {
@@ -48,11 +52,33 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    margin: 5 auto; /* Centra el botón */
   }
   
   button:hover {
     background-color: #00828a;
   }
   
+  .error-message {
+    color: #ff0000;
+  }
+  
+  .cart-details {
+    margin-top: 20px;
+  }
+  
+  .cart-item {
+    margin-bottom: 10px;
+  }
+  
+  .total {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .total::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   

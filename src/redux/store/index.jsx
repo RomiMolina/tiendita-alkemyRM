@@ -4,7 +4,6 @@ import productReducer from '../reducer/index.jsx';
 
 const rootReducer = combineReducers({
   products: productReducer,
-  // Otros reducers según tus necesidades
 });
 
 const store = createStore(

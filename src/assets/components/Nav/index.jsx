@@ -1,10 +1,10 @@
 
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { filterProducts } from '../../../redux/actions/index.jsx';
 import Cart from '../Cart/index.jsx';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
+
 
 const NavBar = () => {
   // const [searchTerm, setSearchTerm] = useState('');
@@ -25,7 +25,11 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="logo">Romina Molina</div>
+      
+      <Link to="/" className="logo">
+          Romina Molina
+        </Link>
+        
         {/* <div className="search-bar">
           <input
             type="text"
